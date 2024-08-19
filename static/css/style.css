@@ -1,0 +1,13 @@
+body{
+    background: lavender;
+    margin: 0;
+}
+
+nav{
+    text-align: center;
+    padding: 5px;
+    background: linear-gradient(35deg,teal 40%, black 110%);
+    font-size: 2.5rem;
+    color: white;
+    border-bottom: 2px solid black;
+}
