@@ -6,3 +6,6 @@ app=Flask(__name__)
 def homepage():
     
     return render_template('index.html')
+
+@app.route('/api/Air_Quality_And_Natural_Gas')
+def renderData():
