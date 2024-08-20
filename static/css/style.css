@@ -3,6 +3,18 @@ body{
     margin: 0;
 }
 
+main {
+    width: 80%;
+    margin: 10%;
+    height: 40vh;
+    overflow: hidden;
+    padding-bottom: 20%;
+}
+
+#map {
+    height: 100vh;
+}
+
 nav{
     text-align: center;
     padding: 5px;
