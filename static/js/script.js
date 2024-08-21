@@ -14,10 +14,27 @@ const init = async () => {
     data.forEach(marker => {
         let lat = marker.lat;
         let lng = marker.lng;
-        let state = marker.state_name;
+        let state = marker.state_id;
+        let cat = marker.Category;
+        let aqi = marker.AQI;
+        // let com = marker['Commercial Consumption'];
+        let total = marker.total;
+        let month = marker.month;
+        let population = marker.population;
 
 
-        L.marker([marker.lat,marker.lng]).addTo(map);
+        L.marker([marker.lat,marker.lng])
+        .addTo(map)
+        .bindPopup(`
+            <h4>
+                AQI: ${aqi}<br>
+                State: ${state}<br>
+                Month: ${month}<br>
+                Category: ${cat}<br>
+                Population: ${population}<br>
+                Total Conssumption: ${total}
+            </h4>
+        `);
     });
 };
 
