@@ -14,7 +14,7 @@ const init = async () => {
     data.forEach(marker => {
         let lat = marker.lat;
         let lng = marker.lng;
-        let state = marker.state_id;
+        let state = marker.state_name;
         let cat = marker.Category;
         let aqi = marker.AQI;
         // let com = marker['Commercial Consumption'];
@@ -23,13 +23,13 @@ const init = async () => {
         let population = marker.population;
 
 
-        L.marker([marker.lat,marker.lng])
+        L.circleMarker([marker.lat,marker.lng])
         .addTo(map)
         .bindPopup(`
             <h4>
                 AQI: ${aqi}<br>
-                State: ${state}<br>
                 Month: ${month}<br>
+                State: ${state}<br>
                 Category: ${cat}<br>
                 Population: ${population}<br>
                 Total Conssumption: ${total}
