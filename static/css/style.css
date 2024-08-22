@@ -1,19 +1,11 @@
 body{
     background: lavender;
     margin: 0;
-}
-
-main {
-    width: 80%;
-    margin: 10%;
-    height: 40vh;
     overflow: hidden;
-    padding-bottom: 20%;
+    height: 100vh;
+    border: 2px solid red;
 }
 
-#map {
-    height: 100vh;
-}
 
 nav{
     text-align: center;
@@ -22,4 +14,25 @@ nav{
     font-size: 2.5rem;
     color: white;
     border-bottom: 2px solid black;
+}
+
+main {
+    width: 80%;
+    margin: 0 10%;
+    height: 40vh;
+    overflow: hidden;
+    padding-bottom: 20%;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#month{
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 50vh;
 }
