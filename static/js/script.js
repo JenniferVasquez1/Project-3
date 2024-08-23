@@ -31,7 +31,7 @@ const renderPoints = async () => {
         let population = marker.population;
 
 
-        L.circleMarker([marker.lat,marker.lng],{
+        let mark = L.circleMarker([marker.lat,marker.lng],{
             radius: total/20000,
             fillColor: cat == 'Good' ? 'green' : 'yellow',
             fillOpacity: .65,
@@ -45,9 +45,13 @@ const renderPoints = async () => {
                 State: ${state}<br>
                 Category: ${cat}<br>
                 Population: ${population}<br>
-                Total Conssumption: ${total}
+                Total Consumption: ${total}
             </h4>
         `);
+
+        if(state == 'Texas') {
+            mark.openPopup();
+        }
     });
 };
 
