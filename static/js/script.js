@@ -31,7 +31,7 @@ const renderPoints = async () => {
         let population = marker.population;
 
 
-        L.circleMarker([marker.lat,marker.lng],{
+        let mark = L.circleMarker([marker.lat,marker.lng],{
             radius: total/20000,
             fillColor: cat == 'Good' ? 'green' : 'yellow',
             fillOpacity: .65,
@@ -45,10 +45,38 @@ const renderPoints = async () => {
                 State: ${state}<br>
                 Category: ${cat}<br>
                 Population: ${population}<br>
-                Total Conssumption: ${total}
+                Total Consumption: ${total}
             </h4>
         `);
+
+        if(state == 'Texas') {
+            mark.openPopup();
+        }
     });
 };
 
 renderPoints();
+
+let legend = L.control({position:'bottomright'});
+
+legend.onAdd = () => {
+    let div = L.DomUtil.create('div','info');
+
+    div.innerHTML = `
+    <h3>AQI Category</h3>
+    <div>
+        <i style="background:green"></i> 00 - 50 Good  <br>
+    </div>
+    <div>
+        <i style="background:yellow"></i> 50 - 100 Moderate  <br>
+    </div>
+    <div>
+        <i style="background:orange"></i> 100 - 200 Unhealthy  <br>
+    </div>
+    <i>* Bubble size based on average <br> gas consumption by state</i>
+    `;
+
+    return div
+};
+
+legend.addTo(map);

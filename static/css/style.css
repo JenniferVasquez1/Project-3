@@ -19,7 +19,7 @@ nav{
 main {
     width: 80%;
     margin: 0 10%;
-    height: 40vh;
+    height: 80vh;
     overflow: hidden;
     padding-bottom: 20%;
     text-align: center;
@@ -34,5 +34,25 @@ h3 {
 }
 
 #map {
-    height: 50vh;
+    height: 60vh;
 }
+
+.info {
+    padding: 5px;
+    background: white;
+}
+
+.info h3 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  i {
+    padding: 1px 5px;
+    margin: 0 5px;
+  }
+
+  .info div {
+    display: flex;
+    justify-content: left;
+  }
