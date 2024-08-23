@@ -56,3 +56,27 @@ const renderPoints = async () => {
 };
 
 renderPoints();
+
+let legend = L.control({position:'bottomright'});
+
+legend.onAdd = () => {
+    let div = L.DomUtil.create('div','info');
+
+    div.innerHTML = `
+    <h3>AQI Category</h3>
+    <div>
+        <i style="background:green"></i> 00 - 50 Good  <br>
+    </div>
+    <div>
+        <i style="background:yellow"></i> 50 - 100 Moderate  <br>
+    </div>
+    <div>
+        <i style="background:orange"></i> 100 - 200 Unhealthy  <br>
+    </div>
+    <i>* Bubble size based on average <br> gas consumption by state</i>
+    `;
+
+    return div
+};
+
+legend.addTo(map);
