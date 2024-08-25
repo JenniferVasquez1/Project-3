@@ -46,3 +46,5 @@ Interactive charts, Scatter Plot and Map
 If there are any questions or concerns, I can be reached at:
 ##### [github: JenniferVasquez1](https://github.com/JenniferVasquez1)
 ##### [email: jennifer.v.harris@outlook.com](mailto:jennifer.v.harris@outlook.com)
+##### [email: sadafhakim@yahoo.com](mailto:sadafhakim@yahoo.com)
+##### [email: lcrowal@icloud.com](mailto:lcrowal@icloud.com)
