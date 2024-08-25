@@ -1,19 +1,11 @@
 body{
     background: lavender;
     margin: 0;
-}
-
-main {
-    width: 80%;
-    margin: 10%;
-    height: 40vh;
     overflow: hidden;
-    padding-bottom: 20%;
+    height: 100vh;
+    border: 2px solid red;
 }
 
-#map {
-    height: 100vh;
-}
 
 nav{
     text-align: center;
@@ -23,3 +15,44 @@ nav{
     color: white;
     border-bottom: 2px solid black;
 }
+
+main {
+    width: 80%;
+    margin: 0 10%;
+    height: 80vh;
+    overflow: hidden;
+    padding-bottom: 20%;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#month{
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 60vh;
+}
+
+.info {
+    padding: 5px;
+    background: white;
+}
+
+.info h3 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  i {
+    padding: 1px 5px;
+    margin: 0 5px;
+  }
+
+  .info div {
+    display: flex;
+    justify-content: left;
+  }
