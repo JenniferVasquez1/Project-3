@@ -31,8 +31,11 @@ Jupyter notebook, JavaScript, HTML, CSS, Python, Leaflet, D3, Sqlite3, Bokeh, Fl
 ## Usage
 Run flask to activate server pages
 
+## References
+Source: https://www.kaggle.com/datasets/alistairking/natural-gas-usage, https://www.kaggle.com/datasets/calebreigada/us-air-quality-1980present
+
 ## Credits
-Jennifer Harris, Sadaf Hakim, Leo Crawl
+Jennifer Harris, Sadaf Hakim, Leo Crowal
 
 ## License
 MIT
