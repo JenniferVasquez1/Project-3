@@ -5,7 +5,7 @@
 [website](https://github.com/JenniferVasquez1/Project-3)
 
 ## Description
-Analyze natural gas and air quality data to find correlation
+We have created an interactive tool where we analyzed correlation and seasonality between Air Quality and Natural Gas Consumption understanding this relationship is important because it helps us know when and where air quality might be at risk due to higher natural gas usage. This knowledge can guide efforts to reduce pollution, such as promoting cleaner energy sources or encouraging people to use energy more efficiently, especially during times when air quality is most likely to suffer. Natural gas gets burned to produce energy and this burning process releases various pollutants into the air, including gases like carbon dioxide which are pollutants that impact the air quality we breathe, making it less healthy.
 
 ![app_image](image_1.png)
 
